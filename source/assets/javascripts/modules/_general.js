@@ -4,12 +4,12 @@ antoniojunyor.general = (function(){
   'user strict'
 
   function init() {
-    name();
+    defTotalHeight();
   }
 
-  function name() {
-    alert('test');
-  }
+  function defTotalHeight() {
+    $('.aj-header').height(window.innerHeight);
+  };
 
   return {
     init: init
