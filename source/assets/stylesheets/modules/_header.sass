@@ -1,10 +1,39 @@
 .aj-header
-  background: inline-image("bg-header-2.png")
+  display: table
+  width: 100%
+  background: inline-image("bg-header-1.png")
   background-size: 100%
-  background-attachment: fixed
+  -webkit-filter: grayscale(100%)
+  margin-bottom: 40px
 
 .aj-content-header
-  padding-top: 50px
-  margin: 0 auto
+  display: table-cell
+  vertical-align: middle
+
+  h1, h3
+    text-align: center
+    color: #fff
+
+  h1
+    font-size: 70px
+
+  h3
+    font-weight: 300
+    font-size: 30px
+
+.aj-social-networking
+  text-align: center
+  margin-top: 20px
+
+  li
+    display: inline-block
+    margin-right: 5px
+
+    a
+      display: inline-block
+
+      &:before
+        font-size: 30px
+        color: #fff
 
 
