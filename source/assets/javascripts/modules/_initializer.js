@@ -1,18 +1,18 @@
 var antoniojunyor = (function() {
   'use strict';
 
-  function init() {
+  function fastInit() {
     antoniojunyor.general.init();
   }
 
   return {
-    init: init
+    fastInit: fastInit
   };
 
 }());
 
 var aj = antoniojunyor;
 
-$(window).load(function() {
-  antoniojunyor.init();
+$(document).ready(function() {
+  antoniojunyor.fastInit();
 });
