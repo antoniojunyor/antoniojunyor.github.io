@@ -19,7 +19,7 @@ antoniojunyor.general = (function(){
   };
 
   function startParallax() {
-    if(window.innerWidth > 998) {
+    if(window.innerWidth > 992) {
       parallaxHeader();
     }
   };
