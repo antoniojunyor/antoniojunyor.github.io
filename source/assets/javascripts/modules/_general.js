@@ -1,6 +1,6 @@
 var antoniojunyor = antoniojunyor || {};
 
-antoniojunyor.general = (function(){
+antoniojunyor.general = (function() {
   'user strict'
 
   var config = {
