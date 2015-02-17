@@ -3,32 +3,38 @@ var antoniojunyor = antoniojunyor || {};
 antoniojunyor.general = (function(){
   'user strict'
 
+  var config = {
+    selectors: {
+      header: '.aj-header'
+    }
+  };
+
   function init() {
     defTotalHeight();
-    parallaxHeader();
+    startParallax();
   }
 
   function defTotalHeight() {
-    $('.aj-header').height(window.innerHeight);
+    $(config.selectors.header).height(window.innerHeight);
+  };
+
+  function startParallax() {
+    if(window.innerWidth > 998) {
+      parallaxHeader();
+    }
   };
 
   function parallaxHeader() {
-    $('.aj-header').each(function() {
-      var $obj = $(this);
+    $(config.selectors.header).each(function() {
 
       $(window).scroll(function() {
-        var yPos = -($(window).scrollTop() / 5);
+        var yPos = -($(this).scrollTop() / 5);
+        var bgPos = (-500 + yPos) + 'px';
 
-        if (window.innerWidth <= 998) {
-          var bgPos = yPos + 'px';
-        } else {
-          var bgPos = (-500 + yPos) + 'px';
-        };
-
-        $obj.css('background-position-y', bgPos);
+        $(config.selectors.header).css('background-position-y', bgPos);
       });
     });
-  }
+  };
 
   return {
     init: init
