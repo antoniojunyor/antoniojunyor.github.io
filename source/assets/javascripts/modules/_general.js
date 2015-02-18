@@ -18,7 +18,7 @@ antoniojunyor.general = (function() {
     $(config.selectors.header).css('height', $(window).height());
 
     $(window).on('resize', function() {
-      $(config.selectors.header).css('height', $(window).height());
+      $(config.selectors.header).css('height', $(this).height());
     });
   };
 
