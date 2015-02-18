@@ -15,7 +15,11 @@ antoniojunyor.general = (function() {
   }
 
   function defTotalHeight() {
-    $(config.selectors.header).height(window.innerHeight);
+    $(config.selectors.header).css('height', $(window).height());
+
+    $(window).on('resize', function() {
+      $(config.selectors.header).css('height', $(window).height());
+    });
   };
 
   function startParallax() {
