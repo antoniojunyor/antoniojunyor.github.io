@@ -33,9 +33,9 @@ antoniojunyor.general = (function() {
 
       $(window).scroll(function() {
         var yPos = -($(this).scrollTop() / 5);
-        var bgPos = (-500 + yPos) + 'px';
+        var bgPos = '0 ' + (-500 + yPos) + 'px';
 
-        $(config.selectors.header).css('background-position-y', bgPos);
+        $(config.selectors.header).css('background-position', bgPos);
       });
     });
   };
