@@ -40,3 +40,40 @@
     filter: grayscale(100%)
   100%
     filter: grayscale(0)
+
+.aj-content-header
+  -webkit-animation-name: animationContentHeader
+  -moz-animation-name: animationContentHeader
+  animation-name: animationContentHeader
+
+  -webkit-animation-fill-mode: both
+  -moz-animation-fill-mode: both
+  animation-fill-mode: both
+
+  -webkit-animation-duration: 1s
+  -moz-animation-duration: 1s
+  animation-duration: 1s
+
+@-webkit-keyframes animationContentHeader
+  0%
+    opacity: 0
+    -webkit-transform: translateY(-20px)
+  100%
+    opacity: 1
+    -webkit-transform: translateY(0)
+
+@-moz-keyframes animationContentHeader
+  0%
+    opacity: 0
+    -moz-transform: translateY(-20px)
+  100%
+    opacity: 1
+    -moz-transform: translateY(0)
+
+@keyframes animationContentHeader
+  0%
+    opacity: 0
+    transform: translateY(-20px)
+  100%
+    opacity: 1
+    transform: translateY(0)
