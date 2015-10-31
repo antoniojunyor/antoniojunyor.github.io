@@ -10,18 +10,8 @@ antoniojunyor.general = (function() {
   };
 
   function init() {
-    defTotalHeight();
     startParallax();
   }
-
-  function defTotalHeight() {
-    var resize_height = document.querySelector(config.selectors.header).style.height = window.innerHeight + 'px';
-    resize_height;
-
-    window.onresize = function() {
-      resize_height;
-    }
-  };
 
   function startParallax() {
     if(window.innerWidth > 992) {
