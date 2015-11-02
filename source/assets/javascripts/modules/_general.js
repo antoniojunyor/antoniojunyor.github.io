@@ -14,7 +14,7 @@ antoniojunyor.general = (function() {
   }
 
   function startParallax() {
-    if(window.innerWidth > 992) {
+    if (window.innerWidth > 991) {
       parallaxHeader();
     }
   };
@@ -24,7 +24,7 @@ antoniojunyor.general = (function() {
 
       $(window).scroll(function() {
         var yPos = -($(this).scrollTop() / 5);
-        var bgPos = '0 ' + (-500 + yPos) + 'px';
+        var bgPos = '0 ' + (0 - yPos) + '%';
 
         $(config.selectors.header).css('background-position', bgPos);
       });
