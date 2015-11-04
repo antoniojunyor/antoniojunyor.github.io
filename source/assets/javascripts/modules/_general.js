@@ -3,11 +3,7 @@ var antoniojunyor = antoniojunyor || {};
 antoniojunyor.general = (function() {
   'user strict'
 
-  var config = {
-    selectors: {
-      header: '.aj-header'
-    }
-  };
+  var $header = $('.aj-header');
 
   function init() {
     startParallax();
@@ -20,13 +16,12 @@ antoniojunyor.general = (function() {
   };
 
   function parallaxHeader() {
-    $(config.selectors.header).each(function() {
-
+    $header.each(function() {
       $(window).scroll(function() {
         var yPos = -($(this).scrollTop() / 5);
-        var bgPos = '0 ' + (0 - yPos) + '%';
+        var bgPos = '0 ' + (-500 + yPos) + 'px';
 
-        $(config.selectors.header).css('background-position', bgPos);
+        $header.css('background-position', bgPos);
       });
     });
   };
