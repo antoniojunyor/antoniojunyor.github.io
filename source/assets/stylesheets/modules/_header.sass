@@ -39,11 +39,22 @@
 
     a
       display: inline-block
-      +single-transition(all, .4s)
+      -webkit-transition: -webkit-transform .2s ease-in-out, opacity .2s ease-in-out
+      transition: transform .2s ease-in-out, opacity .2s ease-in-out
 
       &:hover,
       &:focus
         opacity: .8
+        -webkit-transform: scale(.97)
+        transform: scale(.97)
+        -webkit-transition: -webkit-transform .2s ease-in-out, opacity .2s ease-in-out
+        transition: transform .2s ease-in-out, opacity .2s ease-in-out
+
+      &:active
+        -webkit-transform: scale(.95)
+        transform: scale(.95)
+        -webkit-transition: -webkit-transform .2s ease-in-out, opacity .2s ease-in-out
+        transition: transform .2s ease-in-out, opacity .2s ease-in-out
 
       &::before
         font-size: 30px
