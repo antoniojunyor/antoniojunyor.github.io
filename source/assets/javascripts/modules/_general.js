@@ -1,7 +1,7 @@
 var antoniojunyor = antoniojunyor || {};
 
 antoniojunyor.general = (function() {
-  'user strict'
+  'use strict';
 
   var $header = $('.aj-header');
 
