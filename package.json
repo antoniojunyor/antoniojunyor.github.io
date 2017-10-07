@@ -1,0 +1,75 @@
+{
+  "name": "antoniojunyor.github.io",
+  "version": "2.0.0",
+  "description": "Antonio Junior, react portfolio",
+  "main": "index.js",
+  "scripts": {
+    "prod": "npm run clean && NODE_ENV=production webpack -p",
+    "clean": "rimraf ./build/*",
+    "start": "NODE_ENV=development WEBPACK_CONFIG=./webpack.config.js node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniojunyor/antoniojunyor.github.io.git"
+  },
+  "keywords": [
+    "antonio",
+    "junior",
+    "front-end",
+    "react",
+    "webpack",
+    "development",
+    "developer",
+    "design",
+    "portfolio"
+  ],
+  "author": "Antonio Junior <junyor@hotmail.co.uk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoniojunyor/antoniojunyor.github.io/issues"
+  },
+  "homepage": "https://github.com/antoniojunyor/antoniojunyor.github.io#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.5.2",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.5.2",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.5.2",
+    "babel-runtime": "^6.5.0",
+    "css-loader": "^0.28.1",
+    "express": "^4.15.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.1",
+    "html-webpack-plugin": "^2.28.0",
+    "image-webpack-loader": "^3.3.1",
+    "node-emoji": "^1.8.1",
+    "node-sass": "^4.5.3",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.1.1",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.6",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.18.2"
+  },
+  "dependencies": {
+    "assert": "^1.4.1",
+    "bin-build": "^3.0.0",
+    "buffer": "^5.0.7",
+    "compressible": "^2.0.10",
+    "fast-deep-equal": "^1.0.0",
+    "gifsicle": "^3.0.4",
+    "gsap": "^1.20.3",
+    "jquery": "^3.2.1",
+    "morgan": "^1.8.2",
+    "whatwg-fetch": "^2.0.3"
+  }
+}
